@@ -19,7 +19,7 @@ NSRegularExpression *NSRegularExpressionFromMarkdownSyntaxType(MarkdownSyntaxTyp
         case MarkdownSyntaxBold:
             return regexp("\\*\\*|__)(.*?)\\1", 0);
         case MarkdownSyntaxEmphasis:
-            return regexp("(\\*|_)(.*?)\\1", 0);
+            return regexp("\\s(\\*|_)(.*?)\\1\\s", 0);
         case MarkdownSyntaxDeletions:
             return regexp("\\~\\~(.*?)\\~\\~", 0);
         case MarkdownSyntaxQuotes:
