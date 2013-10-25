@@ -2,7 +2,7 @@
 
 NSAttributedString + UITextView + Markdown  Syntax highlighting.
 
-![Capture](http://gyazo.com/b5619abe667f0061997ef2a715d3e713)
+![Capture](http://gyazo.com/b5619abe667f0061997ef2a715d3e713.git)
 
 ## Contributing
 
