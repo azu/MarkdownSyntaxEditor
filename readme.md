@@ -4,6 +4,8 @@ NSAttributedString + UITextView + Markdown  Syntax highlighting.
 
 ![Capture](http://gyazo.com/b5619abe667f0061997ef2a715d3e713.gif)
 
+![Screenshot](https://www.monosnap.com/image/fxcjssMHQfPX7dqGwjRVip2Ns.png)
+
 ## Contributing
 
 1. Fork it!

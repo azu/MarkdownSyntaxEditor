@@ -15,5 +15,14 @@
     [super viewDidLoad];
 }
 
+- (void)textViewDidEndEditing:(UITextView *) textView {
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
+- (void)textViewDidBeginEditing:(UITextView *) textView {
+    [self.navigationController setNavigationBarHidden:YES];
+
+}
+
 
 @end

@@ -133,7 +133,7 @@ Blockquotes - 引用
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
-                                    <outlet property="delegate" destination="bPR-3p-2QF" id="XQA-eF-8HL"/>
+                                    <outlet property="delegate" destination="bPR-3p-2QF" id="e3v-eg-3YD"/>
                                 </connections>
                             </textView>
                         </subviews>
