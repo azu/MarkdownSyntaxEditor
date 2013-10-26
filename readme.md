@@ -17,3 +17,5 @@ NSAttributedString + UITextView + Markdown  Syntax highlighting.
 ## License
 
 MIT
+
+Contain [adamhoracek/KOKeyboard](https://github.com/adamhoracek/KOKeyboard "adamhoracek/KOKeyboard")
