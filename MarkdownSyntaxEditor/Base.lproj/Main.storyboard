@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
@@ -31,12 +32,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIO-ls-k2Y">
-                                <rect key="frame" x="0.0" y="62" width="320" height="506"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIO-ls-k2Y" customClass="MarkdownTextView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text"># Code - コードの挿入
-
+                                <mutableString key="text"># Code - コードの挿入
 
 ```ruby:qiita.rb
 puts 'The best way to log and share programmers knowledge.'
@@ -125,7 +125,7 @@ Blockquotes - 引用
 \# H1
 
 エスケープされています
-</string>
+</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
@@ -134,6 +134,13 @@ Blockquotes - 引用
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yIO-ls-k2Y" firstAttribute="leading" secondItem="zL7-Xo-2qh" secondAttribute="leading" id="LnF-FN-jAk"/>
+                            <constraint firstItem="yIO-ls-k2Y" firstAttribute="top" secondItem="a0y-Kl-Nj8" secondAttribute="bottom" id="VDh-hX-qZQ"/>
+                            <constraint firstItem="yIO-ls-k2Y" firstAttribute="top" secondItem="a0y-Kl-Nj8" secondAttribute="bottom" id="aqG-D3-75c"/>
+                            <constraint firstAttribute="trailing" secondItem="yIO-ls-k2Y" secondAttribute="trailing" id="hmE-8U-XDJ"/>
+                            <constraint firstAttribute="bottom" secondItem="yIO-ls-k2Y" secondAttribute="bottom" id="ypZ-ef-kBY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Editor" id="A4y-LW-aOw"/>
                     <connections>
