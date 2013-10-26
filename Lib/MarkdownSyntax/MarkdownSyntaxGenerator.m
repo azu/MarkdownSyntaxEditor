@@ -13,7 +13,7 @@ NSRegularExpression *NSRegularExpressionFromMarkdownSyntaxType(MarkdownSyntaxTyp
         case MarkdownSyntaxUnknown:
             return nil;
         case MarkdownSyntaxHeaders:
-            return regexp("(#+)(.*)", 0);
+            return regexp("\\n(#+)(.*)", 0);
         case MarkdownSyntaxLinks:
             return regexp("\\[([^\\[]+)\\]\\(([^\\)]+)\\)", 0);
         case MarkdownSyntaxBold:
