@@ -17,7 +17,7 @@ NSRegularExpression *NSRegularExpressionFromMarkdownSyntaxType(MarkdownSyntaxTyp
         case MarkdownSyntaxLinks:
             return regexp("\\[([^\\[]+)\\]\\(([^\\)]+)\\)", 0);
         case MarkdownSyntaxBold:
-            return regexp("\\*\\*|__)(.*?)\\1", 0);
+            return regexp("(\\*\\*|__)(.*?)\\1", 0);
         case MarkdownSyntaxEmphasis:
             return regexp("\\s(\\*|_)(.*?)\\1\\s", 0);
         case MarkdownSyntaxDeletions:
@@ -34,6 +34,8 @@ NSRegularExpression *NSRegularExpressionFromMarkdownSyntaxType(MarkdownSyntaxTyp
             return regexp("\\n\\*([^\\*]*)", 0);
         case MarkdownSyntaxOLLists:
             return regexp("\\n[0-9]+\\.(.*)", 0);
+        case NumberOfMarkdownSyntax:
+            break;
     }
     return nil;
 }
@@ -43,15 +45,21 @@ NSDictionary *AttributesFromMarkdownSyntaxType(MarkdownSyntaxType v) {
         case MarkdownSyntaxUnknown:
             return @{};
         case MarkdownSyntaxHeaders:
-            return @{
-                NSFontAttributeName : [UIFont boldSystemFontOfSize:16]
-            };
+            if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+                return @{
+                    NSFontAttributeName : [UIFont boldSystemFontOfSize:[UIFont buttonFontSize]]
+                };
+            } else {
+                return @{
+                    NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline]
+                };
+            }
         case MarkdownSyntaxLinks:
             return @{NSForegroundColorAttributeName : [UIColor blueColor]};
         case MarkdownSyntaxBold:
-            return @{NSFontAttributeName : [UIFont boldSystemFontOfSize:14]};
+            return @{NSFontAttributeName : [UIFont boldSystemFontOfSize:[UIFont systemFontSize]]};
         case MarkdownSyntaxEmphasis:
-            return @{NSFontAttributeName : [UIFont boldSystemFontOfSize:14]};
+            return @{NSFontAttributeName : [UIFont boldSystemFontOfSize:[UIFont systemFontSize]]};
         case MarkdownSyntaxDeletions:
             return @{NSStrikethroughStyleAttributeName : @(NSUnderlineStyleSingle)};
         case MarkdownSyntaxQuotes:
@@ -68,6 +76,8 @@ NSDictionary *AttributesFromMarkdownSyntaxType(MarkdownSyntaxType v) {
             return @{};
         case MarkdownSyntaxOLLists:
             return @{};
+        case NumberOfMarkdownSyntax:
+            break;
     }
     return nil;
 }
@@ -78,28 +88,13 @@ NSDictionary *AttributesFromMarkdownSyntaxType(MarkdownSyntaxType v) {
 }
 - (NSArray *)syntaxModelsForText:(NSString *) text {
     NSMutableArray *markdownSyntaxModels = [NSMutableArray array];
-    NSArray *syntaxArray = @[
-        @(MarkdownSyntaxUnknown),
-        @(MarkdownSyntaxHeaders),
-        @(MarkdownSyntaxLinks),
-        @(MarkdownSyntaxBold),
-        @(MarkdownSyntaxEmphasis),
-        @(MarkdownSyntaxDeletions),
-        @(MarkdownSyntaxQuotes),
-        @(MarkdownSyntaxInlineCode),
-        @(MarkdownSyntaxCodeBlock),
-        @(MarkdownSyntaxBlockquotes),
-        @(MarkdownSyntaxULLists),
-        @(MarkdownSyntaxOLLists),
-    ];
-    for (NSNumber *number in syntaxArray) {
-        MarkdownSyntaxType type = (MarkdownSyntaxType)[number unsignedIntegerValue];
-        NSRegularExpression *expression = NSRegularExpressionFromMarkdownSyntaxType(type);
+    for (MarkdownSyntaxType i = MarkdownSyntaxUnknown; i < NumberOfMarkdownSyntax; i++) {
+        NSRegularExpression *expression = NSRegularExpressionFromMarkdownSyntaxType(i);
         NSArray *matches = [expression matchesInString:text
                                        options:0
                                        range:NSMakeRange(0, [text length])];
         for (NSTextCheckingResult *result in matches) {
-            [markdownSyntaxModels addObject:[MarkdownSyntaxModel modelWithType:type range:result.range]];
+            [markdownSyntaxModels addObject:[MarkdownSyntaxModel modelWithType:i range:result.range]];
         }
     }
     return markdownSyntaxModels;

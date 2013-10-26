@@ -18,6 +18,7 @@ typedef NS_ENUM(NSUInteger, MarkdownSyntaxType){
     MarkdownSyntaxBlockquotes,
     MarkdownSyntaxULLists,
     MarkdownSyntaxOLLists,
+    NumberOfMarkdownSyntax,
 };
 
 @interface MarkdownSyntaxModel : NSObject

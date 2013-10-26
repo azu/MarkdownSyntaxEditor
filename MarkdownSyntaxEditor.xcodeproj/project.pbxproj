@@ -345,6 +345,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MarkdownSyntaxEditor/MarkdownSyntaxEditor-Prefix.pch";
 				INFOPLIST_FILE = "MarkdownSyntaxEditor/MarkdownSyntaxEditor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -445,6 +446,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MarkdownSyntaxEditor/MarkdownSyntaxEditor-Prefix.pch";
 				INFOPLIST_FILE = "MarkdownSyntaxEditor/MarkdownSyntaxEditor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +462,7 @@
 				17B5C4DAE89B2DAA5C9F130A /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17B5CB56116ACE6FE5247E35 /* Build configuration list for PBXProject "MarkdownSyntaxEditor" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +480,7 @@
 				17B5C3C94E33BE0831F1C19C /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
