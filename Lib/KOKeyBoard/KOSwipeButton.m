@@ -266,8 +266,8 @@
 }
 
 - (void)touchesMoved:(NSSet *) touches withEvent:(UIEvent *) event {
-    UITouch *t = [touches anyObject];
-    CGPoint touchMovePoint = [t locationInView:self];
+    UITouch *anyObject = [touches anyObject];
+    CGPoint touchMovePoint = [anyObject locationInView:self];
 
     CGFloat xdiff = touchBeginPoint.x - touchMovePoint.x;
     CGFloat ydiff = touchBeginPoint.y - touchMovePoint.y;
@@ -277,7 +277,6 @@
         [delegate trackPointMovedX:xdiff Y:ydiff selecting:selecting];
         return;
     }
-
     if (distance > 250) {
         [self selectLabel:-1];
     } else if (![self isTabButton] && (distance > 20)) {

@@ -141,7 +141,7 @@
 }
 
 
-- (void)trackPointMovedX:(int) xdiff Y:(int) ydiff selecting:(BOOL) selecting {
+- (void)trackPointMovedX:(NSInteger) xdiff Y:(NSInteger) ydiff selecting:(BOOL) selecting {
     CGRect loc = startLocation;
 
     loc.origin.y -= textView.contentOffset.y;

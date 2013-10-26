@@ -13,7 +13,7 @@ NSRegularExpression *NSRegularExpressionFromMarkdownSyntaxType(MarkdownSyntaxTyp
         case MarkdownSyntaxUnknown:
             return nil;
         case MarkdownSyntaxHeaders:
-            return regexp("\\n(#+)(.*)", 0);
+            return regexp("(#+)(.*)", NSRegularExpressionAnchorsMatchLines);
         case MarkdownSyntaxLinks:
             return regexp("\\[([^\\[]+)\\]\\(([^\\)]+)\\)", 0);
         case MarkdownSyntaxBold:
@@ -29,11 +29,11 @@ NSRegularExpression *NSRegularExpressionFromMarkdownSyntaxType(MarkdownSyntaxTyp
         case MarkdownSyntaxCodeBlock:
             return regexp("```([\\s\\S]*?)```", 0);
         case MarkdownSyntaxBlockquotes:
-            return regexp("\\n(&gt;|\\>)(.*)", 0);
+            return regexp("\n(&gt;|\\>)(.*)",0);
         case MarkdownSyntaxULLists:
-            return regexp("\\n\\*([^\\*]*)", 0);
+            return regexp("^\\*([^\\*]*)", NSRegularExpressionAnchorsMatchLines);
         case MarkdownSyntaxOLLists:
-            return regexp("\\n[0-9]+\\.(.*)", 0);
+            return regexp("^[0-9]+\\.(.*)", NSRegularExpressionAnchorsMatchLines);
         case NumberOfMarkdownSyntax:
             break;
     }
