@@ -8,14 +8,11 @@
 
 
 @implementation EditorViewController {
-
     __weak IBOutlet MarkdownTextView *editorTextView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    editorTextView.contentInset = UIEdgeInsetsMake(0, 0,
-        0, 0);
 }
 
 

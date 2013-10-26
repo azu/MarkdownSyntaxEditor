@@ -25,17 +25,21 @@
             <objects>
                 <viewController storyboardIdentifier="EditorViewController" id="bPR-3p-2QF" customClass="EditorViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="a0y-Kl-Nj8"/>
-                        <viewControllerLayoutGuide type="bottom" id="aEg-Ev-sKc"/>
+                        <viewControllerLayoutGuide type="top" id="1Ku-7B-fgg"/>
+                        <viewControllerLayoutGuide type="bottom" id="a8X-zn-dZP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zL7-Xo-2qh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIO-ls-k2Y" customClass="MarkdownTextView">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="568" id="AUL-GI-Amo"/>
+                                    <constraint firstAttribute="width" constant="320" id="dS4-Y2-FPY"/>
+                                </constraints>
                                 <mutableString key="text"># Code - コードの挿入
 
 ```ruby:qiita.rb
@@ -135,16 +139,15 @@ Blockquotes - 引用
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yIO-ls-k2Y" firstAttribute="leading" secondItem="zL7-Xo-2qh" secondAttribute="leading" id="LnF-FN-jAk"/>
-                            <constraint firstItem="yIO-ls-k2Y" firstAttribute="top" secondItem="a0y-Kl-Nj8" secondAttribute="bottom" id="VDh-hX-qZQ"/>
-                            <constraint firstItem="yIO-ls-k2Y" firstAttribute="top" secondItem="a0y-Kl-Nj8" secondAttribute="bottom" id="aqG-D3-75c"/>
-                            <constraint firstAttribute="trailing" secondItem="yIO-ls-k2Y" secondAttribute="trailing" id="hmE-8U-XDJ"/>
-                            <constraint firstAttribute="bottom" secondItem="yIO-ls-k2Y" secondAttribute="bottom" id="ypZ-ef-kBY"/>
+                            <constraint firstItem="yIO-ls-k2Y" firstAttribute="top" secondItem="zL7-Xo-2qh" secondAttribute="top" id="2Yy-IZ-52X"/>
+                            <constraint firstItem="yIO-ls-k2Y" firstAttribute="top" secondItem="zL7-Xo-2qh" secondAttribute="top" id="Kq6-Jb-a50"/>
+                            <constraint firstItem="yIO-ls-k2Y" firstAttribute="leading" secondItem="zL7-Xo-2qh" secondAttribute="leading" id="Xk9-i0-tTg"/>
+                            <constraint firstItem="yIO-ls-k2Y" firstAttribute="top" secondItem="zL7-Xo-2qh" secondAttribute="top" id="jRX-jD-LdE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Editor" id="A4y-LW-aOw"/>
                     <connections>
-                        <outlet property="editorTextView" destination="yIO-ls-k2Y" id="17R-tF-Yzo"/>
+                        <outlet property="editorTextView" destination="yIO-ls-k2Y" id="vwT-3C-gEl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ms7-sY-rfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

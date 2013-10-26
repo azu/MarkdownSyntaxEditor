@@ -5,6 +5,7 @@
 
 #import "MarkdownTextView.h"
 #import "MarkdownSyntaxGenerator.h"
+#import "KOKeyboardRow.h"
 
 
 @interface MarkdownTextView ()
@@ -23,6 +24,7 @@
     [[NSNotificationCenter defaultCenter]
         addObserver:self selector:@selector(didTextChangeText:) name:UITextViewTextDidChangeNotification object:nil];
     [self updateSyntax];
+    [KOKeyboardRow applyToTextView:self];
     return self;
 }
 

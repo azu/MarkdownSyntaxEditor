@@ -7,27 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17B5C0457502B3BEA2FD275B /* trackpoint-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C00AD1416FE207E6B7E4 /* trackpoint-blue@2x.png */; };
+		17B5C05FEC8FD14B5B881E99 /* KOKeyboardRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7E48D7AC7CD7FD2115A /* KOKeyboardRow.m */; };
 		17B5C072E253F29BA5E6B019 /* MarkdownSyntaxModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C6343549C35A4E747F80 /* MarkdownSyntaxModel.m */; };
 		17B5C0D17AE20200B6870728 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CB2CDEF8D61F0C94C612 /* AppDelegate.m */; };
+		17B5C0FF86B1DF4EC407C200 /* undo-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C322C54D0B6E62FB4FE3 /* undo-black@2x.png */; };
 		17B5C10907673629E021B1A7 /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5A7F1D704B0532DD559 /* EditorViewController.m */; };
 		17B5C11CC50BA86B58584A19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C77538EBB3930A9FD325 /* main.m */; };
 		17B5C15EB3CA6A4ADC826C3A /* MarkdownSyntaxGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CC2F7969FC11ADFA5E77 /* MarkdownSyntaxGenerator.m */; };
 		17B5C1632B2A97942F02C616 /* MarkdownSyntaxGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CC2F7969FC11ADFA5E77 /* MarkdownSyntaxGenerator.m */; };
 		17B5C195566E417FCB70DA63 /* MarkdownTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CE9F808C4DF8C3BF927A /* MarkdownTextView.m */; };
+		17B5C203C60CCA25D04C6377 /* undo-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C8DCDE4306DCDC257574 /* undo-black.png */; };
+		17B5C25DC4148F60BCF5A3BB /* undo-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C45CDBD968D8AEDEE862 /* undo-blue.png */; };
 		17B5C2D8CB40DA6E49D917B5 /* MarkdownTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CE9F808C4DF8C3BF927A /* MarkdownTextView.m */; };
+		17B5C371A14ADA266B4781CC /* trackpoint-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CB6D936DADF769B50E33 /* trackpoint-white@2x.png */; };
+		17B5C3EAD4E92E9693F295DF /* undo-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C45CDBD968D8AEDEE862 /* undo-blue.png */; };
 		17B5C43758C5ADBDC96684E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA1AE333F95F979F16BD /* UIKit.framework */; };
+		17B5C49945616219E69868C8 /* redo-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CC15D20B952AC811DF12 /* redo-blue@2x.png */; };
 		17B5C4F51FC3844AC1605D9B /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C5A7F1D704B0532DD559 /* EditorViewController.m */; };
+		17B5C531D4E183F0B4176D86 /* trackpoint-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C00AD1416FE207E6B7E4 /* trackpoint-blue@2x.png */; };
 		17B5C54EDCCA70EA5580E293 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C733582B11BDFE959EA5 /* InfoPlist.strings */; };
 		17B5C5747D9C2EAF03EE9BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C0F811232E001557F481 /* Main.storyboard */; };
+		17B5C5BDF13B26640F134A77 /* redo-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C63C6984209030B937F7 /* redo-black.png */; };
 		17B5C6772599FAF5C32B8542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C27ABAA634734167F0B3 /* Foundation.framework */; };
+		17B5C67AB36DB7134C37425B /* KOSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C8AB004FFA1F07A81C1B /* KOSwipeButton.m */; };
+		17B5C741D7685D5112A245A7 /* redo-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C5C3E51ADFF6BA66F36D /* redo-black@2x.png */; };
+		17B5C75A41A8ED2FAD461927 /* trackpoint-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C4384D193C94644C33B4 /* trackpoint-white.png */; };
 		17B5C7A8DEBDA6C56D8F4F26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CA1AE333F95F979F16BD /* UIKit.framework */; };
+		17B5C7BE24DC25AFC37DD748 /* key-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C39C5EAEE228933387BB /* key-pressed.png */; };
 		17B5C7C3DF4878BCF5E50176 /* MarkdownSyntaxModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C6343549C35A4E747F80 /* MarkdownSyntaxModel.m */; };
+		17B5C80645BBD7AFB3588164 /* redo-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C7865FAD55943D29F4D1 /* redo-blue.png */; };
+		17B5C82CF799F8C2DAD5A8C7 /* key-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C771E27BB63AD72BF01E /* key-pressed@2x.png */; };
+		17B5C857B6942D52E238929B /* trackpoint-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C851B08D37890AE3F4C9 /* trackpoint-black.png */; };
+		17B5C857CAD3385F7D2B280A /* undo-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C69D54AA640D4AB8D946 /* undo-blue@2x.png */; };
+		17B5C87FC636F5341FC3C0EC /* redo-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C5C3E51ADFF6BA66F36D /* redo-black@2x.png */; };
 		17B5C8E48225BBE34D483641 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CC770BD3CF46497215F8 /* CoreGraphics.framework */; };
+		17B5C9376ED2571E534792FA /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C89432BA211B7FA81910 /* key.png */; };
 		17B5C97E7BCB9E28CA42A9D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C92ACA9C91A3DF514D45 /* Images.xcassets */; };
+		17B5C998374B1ECC06AE7479 /* trackpoint-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C152FEB6D9FCC1A97BD0 /* trackpoint-blue.png */; };
+		17B5C9B747966AC5740481EF /* KOKeyboardRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C7E48D7AC7CD7FD2115A /* KOKeyboardRow.m */; };
+		17B5CA0CD5497A0295D39D52 /* undo-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C322C54D0B6E62FB4FE3 /* undo-black@2x.png */; };
+		17B5CA1D73EDBDF91F3D67DD /* trackpoint-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C851B08D37890AE3F4C9 /* trackpoint-black.png */; };
+		17B5CA2151861E164C361C95 /* undo-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C69D54AA640D4AB8D946 /* undo-blue@2x.png */; };
+		17B5CA2391F2BBD5A91CC6F9 /* undo-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C8DCDE4306DCDC257574 /* undo-black.png */; };
 		17B5CA43B62DA7A3E77892A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CFB49D9EDF2FD5FC3F3B /* InfoPlist.strings */; };
+		17B5CAE4E8F734E6609A07D6 /* trackpoint-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C4384D193C94644C33B4 /* trackpoint-white.png */; };
+		17B5CAE513FF89AC6E0128C5 /* key-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CD359853837E771EBDA6 /* key-blue@2x.png */; };
+		17B5CAF60CD78D509A10FB63 /* redo-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C63C6984209030B937F7 /* redo-black.png */; };
+		17B5CB158A016687737BE822 /* trackpoint-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C152FEB6D9FCC1A97BD0 /* trackpoint-blue.png */; };
+		17B5CB17507337873B40535E /* key@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CEF494CD9C871A8010EB /* key@2x.png */; };
 		17B5CB89F9AD13B5BDD13DB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C27ABAA634734167F0B3 /* Foundation.framework */; };
+		17B5CCCB6582B9DC23724545 /* redo-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CC15D20B952AC811DF12 /* redo-blue@2x.png */; };
 		17B5CD41B3988C29043589B0 /* MarkdownSyntaxEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CC74F9FDD00A6110571B /* MarkdownSyntaxEditorTests.m */; };
+		17B5CDCB05A301BBF4110096 /* trackpoint-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CB6D936DADF769B50E33 /* trackpoint-white@2x.png */; };
+		17B5CDD9EC4CF423F18122AA /* redo-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C7865FAD55943D29F4D1 /* redo-blue.png */; };
+		17B5CDEB1D94B36E4968661D /* trackpoint-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C1457B34D742705F6C17 /* trackpoint-black@2x.png */; };
+		17B5CDFDEFDB10378D665129 /* KOSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C8AB004FFA1F07A81C1B /* KOSwipeButton.m */; };
+		17B5CE2DBA8C1D76A0D0D7BD /* key-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C1DE5A0723AEDF02AFC1 /* key-blue.png */; };
 		17B5CEF52A22C06B9F8F0F9E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CD7C3BEEC2E139D2AB42 /* XCTest.framework */; };
+		17B5CFAFF9D746D86812EC2A /* trackpoint-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C1457B34D742705F6C17 /* trackpoint-black@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,31 +79,55 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17B5C00AD1416FE207E6B7E4 /* trackpoint-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trackpoint-blue@2x.png"; sourceTree = "<group>"; };
 		17B5C03840A39B54687EB780 /* MarkdownSyntaxModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownSyntaxModel.h; sourceTree = "<group>"; };
 		17B5C080A9C842D2B7CCCE2E /* MarkdownSyntaxEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarkdownSyntaxEditor-Prefix.pch"; sourceTree = "<group>"; };
+		17B5C1457B34D742705F6C17 /* trackpoint-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trackpoint-black@2x.png"; sourceTree = "<group>"; };
+		17B5C152FEB6D9FCC1A97BD0 /* trackpoint-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trackpoint-blue.png"; sourceTree = "<group>"; };
 		17B5C180E4DE32A5EAA4E41B /* MarkdownSyntaxEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkdownSyntaxEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B5C1DE5A0723AEDF02AFC1 /* key-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-blue.png"; sourceTree = "<group>"; };
 		17B5C27ABAA634734167F0B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17B5C30DBF2F48DB019194B4 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = readme.md; sourceTree = "<group>"; };
+		17B5C322C54D0B6E62FB4FE3 /* undo-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "undo-black@2x.png"; sourceTree = "<group>"; };
+		17B5C39C5EAEE228933387BB /* key-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-pressed.png"; sourceTree = "<group>"; };
+		17B5C4384D193C94644C33B4 /* trackpoint-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trackpoint-white.png"; sourceTree = "<group>"; };
+		17B5C45CDBD968D8AEDEE862 /* undo-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "undo-blue.png"; sourceTree = "<group>"; };
 		17B5C57C7BAA8B33006B792B /* MarkdownSyntaxGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownSyntaxGenerator.h; sourceTree = "<group>"; };
 		17B5C5A7F1D704B0532DD559 /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorViewController.m; sourceTree = "<group>"; };
+		17B5C5C3E51ADFF6BA66F36D /* redo-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redo-black@2x.png"; sourceTree = "<group>"; };
 		17B5C6269CB4DB6EBDD976CC /* MarkdownSyntaxEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MarkdownSyntaxEditor-Info.plist"; sourceTree = "<group>"; };
 		17B5C6343549C35A4E747F80 /* MarkdownSyntaxModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownSyntaxModel.m; sourceTree = "<group>"; };
+		17B5C63C6984209030B937F7 /* redo-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redo-black.png"; sourceTree = "<group>"; };
 		17B5C684075D185BFD38F681 /* MarkdownTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownTextView.h; sourceTree = "<group>"; };
+		17B5C69D54AA640D4AB8D946 /* undo-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "undo-blue@2x.png"; sourceTree = "<group>"; };
+		17B5C6BA46FFC1794603B639 /* KOSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOSwipeButton.h; sourceTree = "<group>"; };
 		17B5C700302FA0810D2F1264 /* MarkdownSyntaxEditorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "MarkdownSyntaxEditorTests-Info.plist"; sourceTree = "<group>"; };
+		17B5C771E27BB63AD72BF01E /* key-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-pressed@2x.png"; sourceTree = "<group>"; };
 		17B5C77538EBB3930A9FD325 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17B5C7865FAD55943D29F4D1 /* redo-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redo-blue.png"; sourceTree = "<group>"; };
+		17B5C7ADBB751193603FFC57 /* KOKeyboardRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KOKeyboardRow.h; sourceTree = "<group>"; };
+		17B5C7E48D7AC7CD7FD2115A /* KOKeyboardRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOKeyboardRow.m; sourceTree = "<group>"; };
 		17B5C81383B769E6DD9DC514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17B5C851B08D37890AE3F4C9 /* trackpoint-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trackpoint-black.png"; sourceTree = "<group>"; };
 		17B5C87A39BF48D640900AB6 /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorViewController.h; sourceTree = "<group>"; };
+		17B5C89432BA211B7FA81910 /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
+		17B5C8AB004FFA1F07A81C1B /* KOSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KOSwipeButton.m; sourceTree = "<group>"; };
+		17B5C8DCDE4306DCDC257574 /* undo-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "undo-black.png"; sourceTree = "<group>"; };
 		17B5C92ACA9C91A3DF514D45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MarkdownSyntaxEditor/Images.xcassets; sourceTree = "<group>"; };
 		17B5C9F0928E0E60277F4D47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5CA1AE333F95F979F16BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		17B5CB2CDEF8D61F0C94C612 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		17B5CB6D936DADF769B50E33 /* trackpoint-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trackpoint-white@2x.png"; sourceTree = "<group>"; };
 		17B5CBC26CFADEB00BE8F3E0 /* MarkdownSyntaxEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkdownSyntaxEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B5CC15D20B952AC811DF12 /* redo-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redo-blue@2x.png"; sourceTree = "<group>"; };
 		17B5CC2F7969FC11ADFA5E77 /* MarkdownSyntaxGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownSyntaxGenerator.m; sourceTree = "<group>"; };
 		17B5CC74F9FDD00A6110571B /* MarkdownSyntaxEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkdownSyntaxEditorTests.m; sourceTree = "<group>"; };
 		17B5CC770BD3CF46497215F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		17B5CD04463F0CF18E8215B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		17B5CD359853837E771EBDA6 /* key-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key-blue@2x.png"; sourceTree = "<group>"; };
 		17B5CD7C3BEEC2E139D2AB42 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		17B5CE9F808C4DF8C3BF927A /* MarkdownTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownTextView.m; sourceTree = "<group>"; };
+		17B5CEF494CD9C871A8010EB /* key@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "key@2x.png"; sourceTree = "<group>"; };
 		17B5CFDF0F421D2DB702C26E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +155,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17B5C0D888B7B3C552CF142D /* KOKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				17B5C6BA46FFC1794603B639 /* KOSwipeButton.h */,
+				17B5C7865FAD55943D29F4D1 /* redo-blue.png */,
+				17B5C7E48D7AC7CD7FD2115A /* KOKeyboardRow.m */,
+				17B5C5C3E51ADFF6BA66F36D /* redo-black@2x.png */,
+				17B5C63C6984209030B937F7 /* redo-black.png */,
+				17B5C8AB004FFA1F07A81C1B /* KOSwipeButton.m */,
+				17B5C45CDBD968D8AEDEE862 /* undo-blue.png */,
+				17B5C1457B34D742705F6C17 /* trackpoint-black@2x.png */,
+				17B5C7ADBB751193603FFC57 /* KOKeyboardRow.h */,
+				17B5C851B08D37890AE3F4C9 /* trackpoint-black.png */,
+				17B5C152FEB6D9FCC1A97BD0 /* trackpoint-blue.png */,
+				17B5CB6D936DADF769B50E33 /* trackpoint-white@2x.png */,
+				17B5C322C54D0B6E62FB4FE3 /* undo-black@2x.png */,
+				17B5C00AD1416FE207E6B7E4 /* trackpoint-blue@2x.png */,
+				17B5CC15D20B952AC811DF12 /* redo-blue@2x.png */,
+				17B5C69D54AA640D4AB8D946 /* undo-blue@2x.png */,
+				17B5C8DCDE4306DCDC257574 /* undo-black.png */,
+				17B5C4384D193C94644C33B4 /* trackpoint-white.png */,
+				17B5C89432BA211B7FA81910 /* key.png */,
+				17B5C39C5EAEE228933387BB /* key-pressed.png */,
+				17B5C1DE5A0723AEDF02AFC1 /* key-blue.png */,
+				17B5CEF494CD9C871A8010EB /* key@2x.png */,
+				17B5CD359853837E771EBDA6 /* key-blue@2x.png */,
+				17B5C771E27BB63AD72BF01E /* key-pressed@2x.png */,
+			);
+			path = KOKeyBoard;
+			sourceTree = "<group>";
+		};
 		17B5C361AA0D64DA1F4D8A5E = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +203,7 @@
 			children = (
 				17B5CAB51E2B9771ABBFCC05 /* MarkdownSyntax */,
 				17B5C7ED93B9954471D8EAFA /* MarkdownTextView */,
+				17B5C0D888B7B3C552CF142D /* KOKeyBoard */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -267,6 +361,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				17B5C54EDCCA70EA5580E293 /* InfoPlist.strings in Resources */,
+				17B5CDD9EC4CF423F18122AA /* redo-blue.png in Resources */,
+				17B5C87FC636F5341FC3C0EC /* redo-black@2x.png in Resources */,
+				17B5C5BDF13B26640F134A77 /* redo-black.png in Resources */,
+				17B5C3EAD4E92E9693F295DF /* undo-blue.png in Resources */,
+				17B5CDEB1D94B36E4968661D /* trackpoint-black@2x.png in Resources */,
+				17B5CA1D73EDBDF91F3D67DD /* trackpoint-black.png in Resources */,
+				17B5CB158A016687737BE822 /* trackpoint-blue.png in Resources */,
+				17B5C371A14ADA266B4781CC /* trackpoint-white@2x.png in Resources */,
+				17B5C0FF86B1DF4EC407C200 /* undo-black@2x.png in Resources */,
+				17B5C531D4E183F0B4176D86 /* trackpoint-blue@2x.png in Resources */,
+				17B5C49945616219E69868C8 /* redo-blue@2x.png in Resources */,
+				17B5C857CAD3385F7D2B280A /* undo-blue@2x.png in Resources */,
+				17B5C203C60CCA25D04C6377 /* undo-black.png in Resources */,
+				17B5CAE4E8F734E6609A07D6 /* trackpoint-white.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +385,26 @@
 				17B5CA43B62DA7A3E77892A9 /* InfoPlist.strings in Resources */,
 				17B5C5747D9C2EAF03EE9BBB /* Main.storyboard in Resources */,
 				17B5C97E7BCB9E28CA42A9D5 /* Images.xcassets in Resources */,
+				17B5C80645BBD7AFB3588164 /* redo-blue.png in Resources */,
+				17B5C741D7685D5112A245A7 /* redo-black@2x.png in Resources */,
+				17B5CAF60CD78D509A10FB63 /* redo-black.png in Resources */,
+				17B5C25DC4148F60BCF5A3BB /* undo-blue.png in Resources */,
+				17B5CFAFF9D746D86812EC2A /* trackpoint-black@2x.png in Resources */,
+				17B5C857B6942D52E238929B /* trackpoint-black.png in Resources */,
+				17B5C998374B1ECC06AE7479 /* trackpoint-blue.png in Resources */,
+				17B5CDCB05A301BBF4110096 /* trackpoint-white@2x.png in Resources */,
+				17B5CA0CD5497A0295D39D52 /* undo-black@2x.png in Resources */,
+				17B5C0457502B3BEA2FD275B /* trackpoint-blue@2x.png in Resources */,
+				17B5CCCB6582B9DC23724545 /* redo-blue@2x.png in Resources */,
+				17B5CA2151861E164C361C95 /* undo-blue@2x.png in Resources */,
+				17B5CA2391F2BBD5A91CC6F9 /* undo-black.png in Resources */,
+				17B5C75A41A8ED2FAD461927 /* trackpoint-white.png in Resources */,
+				17B5C9376ED2571E534792FA /* key.png in Resources */,
+				17B5C7BE24DC25AFC37DD748 /* key-pressed.png in Resources */,
+				17B5CE2DBA8C1D76A0D0D7BD /* key-blue.png in Resources */,
+				17B5CB17507337873B40535E /* key@2x.png in Resources */,
+				17B5CAE513FF89AC6E0128C5 /* key-blue@2x.png in Resources */,
+				17B5C82CF799F8C2DAD5A8C7 /* key-pressed@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +421,8 @@
 				17B5C1632B2A97942F02C616 /* MarkdownSyntaxGenerator.m in Sources */,
 				17B5C7C3DF4878BCF5E50176 /* MarkdownSyntaxModel.m in Sources */,
 				17B5C2D8CB40DA6E49D917B5 /* MarkdownTextView.m in Sources */,
+				17B5C05FEC8FD14B5B881E99 /* KOKeyboardRow.m in Sources */,
+				17B5CDFDEFDB10378D665129 /* KOSwipeButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +435,8 @@
 				17B5C15EB3CA6A4ADC826C3A /* MarkdownSyntaxGenerator.m in Sources */,
 				17B5C072E253F29BA5E6B019 /* MarkdownSyntaxModel.m in Sources */,
 				17B5C195566E417FCB70DA63 /* MarkdownTextView.m in Sources */,
+				17B5C9B747966AC5740481EF /* KOKeyboardRow.m in Sources */,
+				17B5C67AB36DB7134C37425B /* KOSwipeButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
